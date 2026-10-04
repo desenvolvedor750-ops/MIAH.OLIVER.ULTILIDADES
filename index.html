@@ -8,8 +8,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Utilidades Curiúva">
-
     <title>Utilidades Curiúva</title>
 
     <style>
@@ -20,45 +18,33 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             background: #fff5f8;
             color: #4a1428;
-            min-height: 100vh;
         }
-
-        /* CABEÇALHO */
 
         header {
             background: #7d1738;
             color: white;
             text-align: center;
-            padding: 28px 15px;
+            padding: 30px 15px;
         }
 
         header h1 {
-            font-size: 30px;
-            margin-bottom: 8px;
+            font-size: 32px;
+            margin-bottom: 10px;
         }
 
         header p {
             font-size: 16px;
         }
 
-        /* MENU */
-
         nav {
             background: white;
             padding: 15px;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         nav a {
@@ -66,15 +52,13 @@
             text-decoration: none;
             font-weight: bold;
             margin: 0 10px;
-            line-height: 35px;
-            white-space: nowrap;
+            display: inline-block;
+            padding: 5px;
         }
 
         nav a:hover {
             color: #d33b69;
         }
-
-        /* INÍCIO */
 
         .inicio {
             text-align: center;
@@ -84,47 +68,42 @@
         .inicio h2 {
             color: #7d1738;
             margin-bottom: 15px;
-            font-size: 28px;
         }
 
         .inicio p {
             max-width: 700px;
             margin: auto;
             line-height: 1.6;
-            font-size: 17px;
         }
 
-        /* FOTO PRINCIPAL */
+        /* FOTO */
 
-        .foto-container {
+        .foto-area {
             width: 100%;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
-        .foto {
-            display: block;
+        .foto-area img {
             width: 100%;
             max-width: 700px;
             height: auto;
+            display: block;
             margin: 0 auto;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.18);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.20);
         }
-
-        /* CATEGORIAS */
 
         .categorias {
             max-width: 1100px;
             margin: auto;
-            padding: 30px 20px;
+            padding: 40px 20px;
         }
 
         .categorias h2 {
             text-align: center;
             color: #7d1738;
             margin-bottom: 25px;
-            font-size: 26px;
         }
 
         .cards {
@@ -137,7 +116,7 @@
             background: white;
             padding: 25px 15px;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
 
@@ -148,14 +127,11 @@
 
         .card p {
             font-size: 14px;
-            line-height: 1.5;
         }
-
-        /* WHATSAPP */
 
         .whatsapp {
             text-align: center;
-            padding: 30px 20px 50px;
+            padding: 20px 20px 50px;
         }
 
         .whatsapp a {
@@ -164,16 +140,9 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            padding: 15px 25px;
+            padding: 16px 25px;
             border-radius: 30px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
         }
-
-        .whatsapp a:hover {
-            background: #1ebe5d;
-        }
-
-        /* RODAPÉ */
 
         footer {
             background: #7d1738;
@@ -183,39 +152,24 @@
             line-height: 1.6;
         }
 
-        /* CELULAR */
-
         @media (max-width: 700px) {
 
             header h1 {
-                font-size: 24px;
+                font-size: 25px;
             }
 
             nav {
-                text-align: left;
                 overflow-x: auto;
                 white-space: nowrap;
-            }
-
-            .inicio h2 {
-                font-size: 23px;
-            }
-
-            .inicio p {
-                font-size: 15px;
-            }
-
-            .foto-container {
-                padding: 10px;
-            }
-
-            .foto {
-                width: 100%;
-                max-width: 100%;
+                text-align: left;
             }
 
             .cards {
                 grid-template-columns: 1fr;
+            }
+
+            .foto-area {
+                padding: 10px;
             }
 
         }
@@ -226,44 +180,10 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
-
     <header id="inicio">
 
         <h1>UTILIDADES CURIÚVA</h1>
 
-        <p>Miah Oliver Studio</p>
-
-    </header>
-
-
-    <!-- MENU -->
-
-    <nav>
-
-        <a href="#inicio">Início</a>
-
-        <a href="#casa">Casa</a>
-
-        <a href="#roupas">Roupas</a>
-
-        <a href="#acessorios">Acessórios</a>
-
-        <a href="#perfumes">Perfumes</a>
-
-        <a href="#maquiagens">Maquiagens</a>
-
-        <a href="#stanley">Stanley</a>
-
-        <a href="#xerox">Xerox</a>
-
-        <a href="#mochilas">Mochilas</a>
-
-        <a href="#bolsas">Bolsas</a>
-
-    </nav>
-
-
-    <!-- CONTEÚDO -->
+        <p>Miah
 ```
 
