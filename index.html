@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -7,6 +8,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Utilidades Curiúva">
+
     <title>Utilidades Curiúva</title>
 
     <style>
@@ -15,6 +18,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -30,13 +37,13 @@
             background: #7d1738;
             color: white;
             text-align: center;
-            padding: 25px 15px;
+            padding: 28px 15px;
         }
 
         header h1 {
             font-size: 32px;
-            margin-bottom: 8px;
             letter-spacing: 2px;
+            margin-bottom: 8px;
         }
 
         header p {
@@ -49,13 +56,12 @@
             background: white;
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 20px;
             padding: 15px;
             box-shadow: 0 3px 12px rgba(0,0,0,0.15);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
             overflow-x: auto;
         }
 
@@ -71,16 +77,16 @@
             color: #d33b69;
         }
 
-        /* APRESENTAÇÃO */
+        /* INÍCIO */
 
         .inicio {
             text-align: center;
-            padding: 45px 20px 25px;
+            padding: 45px 20px 30px;
         }
 
         .inicio h2 {
             color: #7d1738;
-            font-size: 28px;
+            font-size: 29px;
             margin-bottom: 15px;
         }
 
@@ -88,35 +94,72 @@
             max-width: 700px;
             margin: auto;
             font-size: 17px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        /* IMAGEM */
+        /* FOTO */
 
         .foto-container {
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
             padding: 20px;
         }
 
-        .foto-container img {
+        .foto {
             display: block;
             width: 100%;
             max-width: 600px;
             height: auto;
-            border-radius: 20px;
+            padding: 5px;
             background: white;
-            padding: 6px;
+            border-radius: 20px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+        }
+
+        /* CATEGORIAS */
+
+        .categorias {
+            max-width: 1100px;
+            margin: 20px auto 40px;
+            padding: 20px;
+        }
+
+        .categorias h2 {
+            text-align: center;
+            color: #7d1738;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+        }
+
+        .card h3 {
+            color: #7d1738;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         /* WHATSAPP */
 
         .whatsapp {
             text-align: center;
-            padding: 25px 20px 50px;
+            padding: 20px 20px 55px;
         }
 
         .whatsapp a {
@@ -126,14 +169,13 @@
             text-decoration: none;
             font-size: 17px;
             font-weight: bold;
-            padding: 15px 28px;
+            padding: 16px 30px;
             border-radius: 40px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.20);
         }
 
         .whatsapp a:hover {
             background: #1ebe5d;
-            transform: translateY(-2px);
         }
 
         /* RODAPÉ */
@@ -142,50 +184,40 @@
             background: #7d1738;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 22px 15px;
             line-height: 1.7;
         }
 
         /* CELULAR */
 
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
 
             header h1 {
-                font-size: 23px;
-            }
-
-            header p {
-                font-size: 14px;
+                font-size: 24px;
             }
 
             nav {
                 justify-content: flex-start;
             }
 
-            .inicio {
-                padding: 35px 15px 20px;
-            }
-
             .inicio h2 {
-                font-size: 23px;
+                font-size: 24px;
             }
 
             .inicio p {
                 font-size: 15px;
             }
 
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
             .foto-container {
                 padding: 15px;
             }
 
-            .foto-container img {
+            .foto {
                 max-width: 100%;
-                border-radius: 15px;
-            }
-
-            .whatsapp a {
-                font-size: 16px;
-                padding: 14px 22px;
             }
 
         }
@@ -194,7 +226,9 @@
 
 </head>
 
+
 <body>
+
 
     <!-- CABEÇALHO -->
 
@@ -238,6 +272,7 @@
 
     <main>
 
+
         <section class="inicio">
 
             <h2>Bem-vindo à Utilidades Curiúva</h2>
@@ -250,13 +285,72 @@
         </section>
 
 
-        <!-- FOTO -->
+        <!-- FOTO PRINCIPAL -->
 
         <section class="foto-container">
 
             <img
-                src="FOTO.jpg"
-                
+                class="foto"
+                src="./FOTO.JPEG"
+                alt="Utilidades Curiúva">
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+
+        <section class="categorias">
+
+            <h2>Nossas Categorias</h2>
+
+            <div class="cards">
+
+                <div class="card" id="casa">
+                    <h3>🏠 Casa</h3>
+                    <p>Produtos e utilidades para sua casa.</p>
+                </div>
+
+                <div class="card" id="roupas">
+                    <h3>👕 Roupas</h3>
+                    <p>Roupas para o dia a dia.</p>
+                </div>
+
+                <div class="card" id="acessorios">
+                    <h3>💍 Acessórios</h3>
+                    <p>Acessórios e novidades.</p>
+                </div>
+
+                <div class="card" id="perfumes">
+                    <h3>🌸 Perfumes</h3>
+                    <p>Perfumes e produtos de beleza.</p>
+                </div>
+
+                <div class="card" id="maquiagens">
+                    <h3>💄 Maquiagens</h3>
+                    <p>Produtos de maquiagem.</p>
+                </div>
+
+                <div class="card" id="stanley">
+                    <h3>🥤 Stanley</h3>
+                    <p>Copos, garrafas e utilidades.</p>
+                </div>
+
+                <div class="card" id="xerox">
+                    <h3>📄 Xerox</h3>
+                    <p>Serviços de cópias e impressão.</p>
+                </div>
+
+                <div class="card" id="mochilas">
+                    <h3>🎒 Mochilas</h3>
+                    <p>Mochilas para escola e trabalho.</p>
+                </div>
+
+                <div class="card" id="bolsas">
+                    <h3>👜 Bolsas</h3>
+                    <p>Bolsas e acessórios.</p>
+                </div>
+
+            </div>
 
         </section>
 
@@ -276,6 +370,7 @@
 
         </section>
 
+
     </main>
 
 
@@ -294,3 +389,4 @@
 
 </html>
 ```
+
