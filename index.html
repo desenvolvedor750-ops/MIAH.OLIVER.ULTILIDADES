@@ -3,9 +3,7 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Utilidades Curiúva">
@@ -26,9 +24,8 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #fff5f8, #f8dce5);
+            background: #fff5f8;
             color: #4a1428;
-            min-height: 100vh;
         }
 
         /* CABEÇALHO */
@@ -37,12 +34,11 @@
             background: #7d1738;
             color: white;
             text-align: center;
-            padding: 28px 15px;
+            padding: 25px 15px;
         }
 
         header h1 {
-            font-size: 32px;
-            letter-spacing: 2px;
+            font-size: 30px;
             margin-bottom: 8px;
         }
 
@@ -54,75 +50,59 @@
 
         nav {
             background: white;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
             padding: 15px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            overflow-x: auto;
+            text-align: center;
+            box-shadow: 0 2px 8px #999;
         }
 
         nav a {
             color: #7d1738;
             text-decoration: none;
             font-weight: bold;
-            font-size: 14px;
-            white-space: nowrap;
-        }
-
-        nav a:hover {
-            color: #d33b69;
+            margin: 0 10px;
+            line-height: 35px;
         }
 
         /* INÍCIO */
 
         .inicio {
             text-align: center;
-            padding: 45px 20px 30px;
+            padding: 40px 20px 20px;
         }
 
         .inicio h2 {
             color: #7d1738;
-            font-size: 29px;
             margin-bottom: 15px;
         }
 
         .inicio p {
             max-width: 700px;
             margin: auto;
-            font-size: 17px;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
         /* FOTO */
 
         .foto-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
+            text-align: center;
             padding: 20px;
         }
 
         .foto {
-            display: block;
             width: 100%;
-            max-width: 600px;
+            max-width: 700px;
             height: auto;
-            padding: 5px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+            display: block;
+            margin: auto;
+            border-radius: 10px;
         }
 
         /* CATEGORIAS */
 
         .categorias {
             max-width: 1100px;
-            margin: 20px auto 40px;
-            padding: 20px;
+            margin: auto;
+            padding: 30px 20px;
         }
 
         .categorias h2 {
@@ -134,32 +114,31 @@
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
+            gap: 15px;
         }
 
         .card {
             background: white;
             padding: 25px 15px;
-            border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
         }
 
         .card h3 {
             color: #7d1738;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .card p {
             font-size: 14px;
-            line-height: 1.5;
         }
 
         /* WHATSAPP */
 
         .whatsapp {
             text-align: center;
-            padding: 20px 20px 55px;
+            padding: 30px 20px 50px;
         }
 
         .whatsapp a {
@@ -167,15 +146,9 @@
             background: #25D366;
             color: white;
             text-decoration: none;
-            font-size: 17px;
             font-weight: bold;
-            padding: 16px 30px;
-            border-radius: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.20);
-        }
-
-        .whatsapp a:hover {
-            background: #1ebe5d;
+            padding: 15px 25px;
+            border-radius: 30px;
         }
 
         /* RODAPÉ */
@@ -184,8 +157,7 @@
             background: #7d1738;
             color: white;
             text-align: center;
-            padding: 22px 15px;
-            line-height: 1.7;
+            padding: 20px;
         }
 
         /* CELULAR */
@@ -197,196 +169,9 @@
             }
 
             nav {
-                justify-content: flex-start;
-            }
-
-            .inicio h2 {
-                font-size: 24px;
-            }
-
-            .inicio p {
-                font-size: 15px;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .foto-container {
-                padding: 15px;
-            }
-
-            .foto {
-                max-width: 100%;
-            }
-
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-    <!-- CABEÇALHO -->
-
-    <header id="inicio">
-
-        <h1>UTILIDADES CURIÚVA</h1>
-
-        <p>Miah Oliver Studio</p>
-
-    </header>
-
-
-    <!-- MENU -->
-
-    <nav>
-
-        <a href="#inicio">Início</a>
-
-        <a href="#casa">Casa</a>
-
-        <a href="#roupas">Roupas</a>
-
-        <a href="#acessorios">Acessórios</a>
-
-        <a href="#perfumes">Perfumes</a>
-
-        <a href="#maquiagens">Maquiagens</a>
-
-        <a href="#stanley">Stanley</a>
-
-        <a href="#xerox">Xerox</a>
-
-        <a href="#mochilas">Mochilas</a>
-
-        <a href="#bolsas">Bolsas</a>
-
-    </nav>
-
-
-    <!-- CONTEÚDO -->
-
-    <main>
-
-
-        <section class="inicio">
-
-            <h2>Bem-vindo à Utilidades Curiúva</h2>
-
-            <p>
-                Encontre produtos e utilidades para o seu dia a dia.
-                Entre em contato conosco pelo WhatsApp para saber mais.
-            </p>
-
-        </section>
-
-
-        <!-- FOTO PRINCIPAL -->
-
-        <section class="foto-container">
-
-            <img
-                class="foto"
-                src="./FOTO.JPEG"
-                alt="Utilidades Curiúva">
-
-        </section>
-
-
-        <!-- CATEGORIAS -->
-
-        <section class="categorias">
-
-            <h2>Nossas Categorias</h2>
-
-            <div class="cards">
-
-                <div class="card" id="casa">
-                    <h3>🏠 Casa</h3>
-                    <p>Produtos e utilidades para sua casa.</p>
-                </div>
-
-                <div class="card" id="roupas">
-                    <h3>👕 Roupas</h3>
-                    <p>Roupas para o dia a dia.</p>
-                </div>
-
-                <div class="card" id="acessorios">
-                    <h3>💍 Acessórios</h3>
-                    <p>Acessórios e novidades.</p>
-                </div>
-
-                <div class="card" id="perfumes">
-                    <h3>🌸 Perfumes</h3>
-                    <p>Perfumes e produtos de beleza.</p>
-                </div>
-
-                <div class="card" id="maquiagens">
-                    <h3>💄 Maquiagens</h3>
-                    <p>Produtos de maquiagem.</p>
-                </div>
-
-                <div class="card" id="stanley">
-                    <h3>🥤 Stanley</h3>
-                    <p>Copos, garrafas e utilidades.</p>
-                </div>
-
-                <div class="card" id="xerox">
-                    <h3>📄 Xerox</h3>
-                    <p>Serviços de cópias e impressão.</p>
-                </div>
-
-                <div class="card" id="mochilas">
-                    <h3>🎒 Mochilas</h3>
-                    <p>Mochilas para escola e trabalho.</p>
-                </div>
-
-                <div class="card" id="bolsas">
-                    <h3>👜 Bolsas</h3>
-                    <p>Bolsas e acessórios.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- WHATSAPP -->
-
-        <section class="whatsapp">
-
-            <a
-                href="https://wa.me/5541988704110"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                💬 Fale conosco pelo WhatsApp
-
-            </a>
-
-        </section>
-
-
-    </main>
-
-
-    <!-- RODAPÉ -->
-
-    <footer>
-
-        <p>Utilidades Curiúva © 2026</p>
-
-        <p>Miah Oliver Studio</p>
-
-    </footer>
-
-
-</body>
-
-</html>
+                text-align: left;
+                overflow-x: auto;
+                white-spa
 ```
+
 
